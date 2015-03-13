@@ -47,3 +47,30 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap'
   gem 'rails-assets-angular'
 end
+
+gem 'haml-rails'
+# To pass variables from a Rails application to JavaScript, using it to the Braintree JS SDK initializer
+gem 'gon', '~> 5.1.2'
+# Figaro is a simple Rails app configuration gem using ENV and a single YAML file to make it easy to securely configure Rails applications by encouraging a convention that keeps configuration out of Git.
+gem 'figaro', '~> 0.7.0'
+
+# gem 'devise'
+# gem 'debugger', group: [:development, :test]
+group :development, :test do
+  # gem 'rspec-rails'
+  gem 'dotenv-rails'
+  gem 'sextant'
+  gem 'byebug'
+  gem 'web-console', '~> 2.0'
+  gem 'pry'
+end
+
+gem 'faker'
+gem 'factory_girl_rails'
+
+group :test do
+  # gem 'capybara'
+  # gem 'selenium-webdriver'
+  # gem 'shoulda-matchers'
+  # gem 'database_cleaner'
+end
